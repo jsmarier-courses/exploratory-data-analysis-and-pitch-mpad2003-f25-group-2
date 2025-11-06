@@ -29,9 +29,17 @@ Insert text here.
 
 
 ## 2. Getting Data
+To import the dataset into Google Sheets, I started by opening a new blank sheet in Google Sheets. Then I clicked on File at the top left corner, selected Import, and clicked Upload to import the dataset file from my computer. Once the file was uploaded, I selected to replace the current sheet so all the data would show up.
 
 ![](data-sheet-picture.png)<br>
 *Figure 1: The "Import file" prompt on Google Sheets.*
+
+
+Looking at the dataset, I noticed that it has 26 rows and 2,603 columns. In this dataset, Global Non-Response shows the percentage of people who didn’t answer the survey in each ward, so it’s a continuous variable because it can take on decimals like 1.7% or 7.6%. Total - Age groups of the population gives the total number of people in each ward, which is also a continuous variable since the numbers can vary widely from ward to ward. Looking further at household data, the column In a two-parent family gives a count of children living with both parents in each ward, which is a discrete variable because it’s whole numbers. 
+
+The dataset has 26 rows and 2,603 columns. The data isn’t super clean. Some cells are blank, which might mean the info is missing or there just isn’t any data for that row. Also, a lot of the numbers have commas (like “26,395”), which can mess up trying to find certain data because Google Sheets treats them as text instead of actual numbers. That means you’ll have to spend more time cleaning it up before doing any calculations.
+
+As I look at the raw data, one question that comes to mind is why some language rows have all zeros. I’m not sure if that means the data is missing or if there really aren’t any speakers of those languages in certain wards. A hypothesis I have is that wards with more people aged 65 and over probably have more people living alone, while wards with more kids (0–14 years) probably have more two-parent families.
 
 
 ## 3. Understanding Data
@@ -70,7 +78,12 @@ Insert text here.
 
 ## 4. Potential Story
 
-Insert text here.
+We want to explore how different wards in Ottawa are being funded and developed, and whether some areas are getting left behind. Looking at the numbers, some wards seem to have higher incomes and more people living in houses, while others have lower incomes or more people in apartments. Are those differences reflected in how much funding or resources each ward gets? And if not, why might certain areas be overlooked?
+
+To tell this story properly, we would need more detailed data, including ward budgets, per-person investment, and housing types by ward. It would also help to have visuals like maps we could overlay with income, population, ward type (rural, suburban, or urban), and funding levels. Seeing these patterns on a visual map would make it much easier to spot imbalances and understand how resources are distributed across the city.
+
+The story could start with a city-wide map highlighting income differences across wards, immediately showing readers where gaps may exist. From there, it could zoom in on one or two different wards, perhaps a wealthy, well-resourced area versus a lower-income ward with fewer resources to highlight the human impact of these imbalances. Adding stories from local residents, along with visual data, could really show not just where the differences exist, but why they matter and how they affect these communities.
+
 
 ## 5. Conclusion
 
