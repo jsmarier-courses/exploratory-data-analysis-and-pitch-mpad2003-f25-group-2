@@ -33,6 +33,7 @@ To import the dataset into Google Sheets, I started by opening a new blank sheet
 
 ![](data-sheet-picture.png)<br>
 *Figure 1: The "Import file" prompt on Google Sheets.*
+https://docs.google.com/spreadsheets/d/1ESC7UYWp0z3m3hqM10Egz4zKhD1YXBQz2nB49yQn69A/edit?usp=sharing
 
 
 Looking at the dataset, I noticed that it has 26 rows and 2,603 columns. In this dataset, Global Non-Response shows the percentage of people who didn’t answer the survey in each ward, so it’s a continuous variable because it can take on decimals like 1.7% or 7.6%. Total - Age groups of the population gives the total number of people in each ward, which is also a continuous variable since the numbers can vary widely from ward to ward. Looking further at household data, the column In a two-parent family gives a count of children living with both parents in each ward, which is a discrete variable because it’s whole numbers. 
