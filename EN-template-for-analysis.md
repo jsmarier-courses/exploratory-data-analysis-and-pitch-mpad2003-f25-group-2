@@ -1,6 +1,6 @@
-**Date**<br>
-**Course Code & Course Name**<br>
-**Student's First Name & Last Name**<br>
+**November 6th, 2025**<br>
+**2003A Introductory Data Storytelling**<br>
+**Michelle Clarke, Yi Liu, Corinna Macintyre**<br>
 **Presented to Jean-Sébastien Marier**<br>
 
 # Exploratory Data Analysis (EDA) & Pitch
