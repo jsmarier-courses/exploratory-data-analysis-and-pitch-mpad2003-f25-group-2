@@ -119,8 +119,7 @@ The story could start with a city-wide map highlighting income differences acros
 
 ## 5. Conclusion
 
-Insert text here.
-
+In conclusion, the team will be moving forward to research ward data. We will analyse if there are any discrepancies in funding and quality of life overall from ward to ward - along with what might be contributing to the data reflecting as such. The dataset itself will also be re-assesed when it's been re-categorized/organized. Lastly, the group will continue to search for other information and statistics/data to help support our story.
 ## 6. References
 
 Include a list of your references here. Please follow [APA guidelines for references](https://apastyle.apa.org/style-grammar-guidelines/references). Hanging paragraphs aren't required though.
@@ -128,3 +127,5 @@ Include a list of your references here. Please follow [APA guidelines for refere
 **Here's an example:**
 
 Bounegru, L., & Gray, J. (Eds.). (2021). *The Data Journalism Handbook 2: Towards A Critical Data Practice*. Amsterdam University Press. [https://ocul-crl.primo.exlibrisgroup.com/permalink/01OCUL_CRL/hgdufh/alma991022890087305153](https://ocul-crl.primo.exlibrisgroup.com/permalink/01OCUL_CRL/hgdufh/alma991022890087305153)
+
+//note from corinna, I will add in my references formatted properly here.
