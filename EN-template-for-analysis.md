@@ -49,9 +49,42 @@ As I look at the raw data, one question that comes to mind is why some language 
 
 ### 3.1. VIMO Analysis
 
-Use three hashtag symbols (`###`) to create a level 3 heading like this one. Please follow this template when it comes to level 1 and level 2 headings. However, you can use level 3 headings as you see fit.
+Use three hashtag symbols (`###`) to create a level 3 heading like this one. Please fo0llow this template when it comes to level 1 and level 2 headings. However, you can use level 3 headings as you see fit.
 
-Insert text here.
+This data is from Government Canada’s 2021 Long Form Census. Government Canada is a trusted source, however it is important to note that the data might not fully reflect true numbers. 
+
+The Long Form Census was sent out to 25% of the population across Ottawa, meaning 75% of citizens did not fill it out. It does not mean the data collected is “wrong”, however the actual numbers may differ since it was a sample pool. 
+
+Overall, this is not a huge issue, as Statistics Canada states “The long-form sample is evenly distributed geographically to ensure a high degree of reliability of the estimates for all areas of the country,” (statcan, 2021 https://www12.statcan.gc.ca/census-recensement/2021/ref/98-306/2021001/intro-eng.cfm 
+). 
+
+Additionally, they have taken the care to make sure that while Wards are different sizes, the amount of people responding in ratio does not change. On the site they continue and state they “[aim] to grant the same degree of importance to all geographic units of a given size,” (statcan, 2021 https://www12.statcan.gc.ca/census-recensement/2021/ref/98-306/2021001/intro-eng.cfm 
+)
+
+However, I still think this might lead to a discrepancy for outlier communities and minorities. They still have a smaller percentage providing answers in the census, even if it has been distributed evenly.
+
+Using smaller numbers as an example, imagine there is a community who makes up 2% of a population. 2/100 turns into 0.5/25. This therefore leaves the minority to be represented by only 0.5 people. In this example, it might present inaccurate data about said minorities, perhaps making it seem like a group or even ward has a higher likelihood to have an income of x or y, when only a small cross section of the group had answered. It is something that would prevail despite the effort to make sure the survey has been divided equally across geographical land.
+
+One example of an outlier (and possible error in our data) can be found in sections regarding Indigenous and Aboriginal peoples. 
+
+For example, there is a row labelled “Total - Private households by tenure - 25% sample data.”   
+
+One of the sub categories of this is “Dwelling provided by the local government, First Nation or Indian band”. However, when one looks at the ward data the number is zero for each and every column. 
+
+The columns overall are a little difficult to read, especially when trying to make sure there are no missing numbers. The categories are not broken up, and are laid out in one sprawling wall of boxes. I believe Michelle touches on this in her part as well.
+
+Overall, it is difficult to tell if are many cases of missing numbers until we can easily sort the categories. Here is an example of an issue I ran into.
+
+//Insert image here.//
+
+(Screenshot of Row to Collum)
+
+The sub categories of “15 to 64 years”, “65 years and over”, “65 to 69 years”, “85 years and over” are not differentiated at all. 
+
+When trying to see if there was any missing or invalid, I got very confused. I added boxes B4;B28 together, but it gave me a much too high number. This is 
+
+Overall, to much more thoroughly look into this I would have to clean the spreadsheet completely. 
+
 
 Support your claims by citing relevant sources. Please follow [APA guidelines for in-text citations](https://apastyle.apa.org/style-grammar-guidelines/citations).
 
