@@ -23,9 +23,7 @@ Did you notice how to create a hyperlink? In Markdown, we put the clickable text
 And to create an unordered list, we simply put a star (`*`) before each item.
 
 ## 1. Introduction
-
-Insert text here.
-
+Group 2 - a group comprised of Velskud, Michelle and myself (Corinna) as of now - have been tasked to explore and come up with a Story using the Ward Data for Ottawa. All of the data we are using has been sourced from Government Canada’s 2021 Long Form Census, and is to be analyzed and compiled into a visual story by the end of the semester. In this pitch, we explore the mechanics of how we obtained the dataset, along with the VIMO process and cleaning it up. Finally, we will discuss further steps and where we will take the project. 
 
 
 ## 2. Getting Data
