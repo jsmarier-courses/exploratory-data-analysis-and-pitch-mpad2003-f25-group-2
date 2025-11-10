@@ -1,6 +1,6 @@
 **November 6th, 2025**<br>
 **2003A Introductory Data Storytelling**<br>
-**Michelle Clarke, Yi Liu, Corinna Macintyre**<br>
+**Michelle Clarke, Yi Liu, Corinna MacIntyre**<br>
 **Presented to Jean-Sébastien Marier**<br>
 
 # Exploratory Data Analysis (EDA) & Pitch
@@ -23,7 +23,7 @@ Did you notice how to create a hyperlink? In Markdown, we put the clickable text
 And to create an unordered list, we simply put a star (`*`) before each item.
 
 ## 1. Introduction
-Group 2 - a group comprised of Velskud, Michelle and myself (Corinna) as of now - have been tasked to explore and come up with a Story using the Ward Data for Ottawa. All of the data we are using has been sourced from Government Canada’s 2021 Long Form Census, and is to be analyzed and compiled into a visual story by the end of the semester. In this pitch, we explore the mechanics of how we obtained the dataset, along with the VIMO process and cleaning it up. Finally, we will discuss further steps and where we will take the project. 
+Group 2 - a group comprised of Li Yu, Michelle Clarke and myself (Corinna MacIntyre) - have been tasked to come up with a Story using Ottawa's Ward Data. The data we are using has been sourced from Government Canada’s 2021 Long Form Census, and is to be analyzed and compiled into a visual story by the end of the semester. In this pitch, we explore the mechanics of how we obtained the dataset, along with the VIMO process and cleaning it up. Finally, we will discuss further steps and where we will take the project. 
 
 
 ## 2. Getting Data
@@ -48,18 +48,20 @@ As I look at the raw data, one question that comes to mind is why some language 
 ### 3.1. VIMO Analysis
 
 Use three hashtag symbols (`###`) to create a level 3 heading like this one. Please fo0llow this template when it comes to level 1 and level 2 headings. However, you can use level 3 headings as you see fit.
-
+ 
+#### Reliability
 This data is from Government Canada’s 2021 Long Form Census. Government Canada is a trusted source, however it is important to note that the data might not fully reflect true numbers. 
 
 The Long Form Census was sent out to 25% of the population across Ottawa, meaning 75% of citizens did not fill it out. It does not mean the data collected is “wrong”, however the actual numbers may differ since it was a sample pool. 
 
-Overall, this is not a huge issue, as Statistics Canada states “The long-form sample is evenly distributed geographically to ensure a high degree of reliability of the estimates for all areas of the country,” (statcan, 2021 https://www12.statcan.gc.ca/census-recensement/2021/ref/98-306/2021001/intro-eng.cfm 
+Overall, this is not a huge issue. Statistics Canada states “The long-form sample is evenly distributed geographically to ensure a high degree of reliability of the estimates for all areas of the country,” (statcan, 2021 https://www12.statcan.gc.ca/census-recensement/2021/ref/98-306/2021001/intro-eng.cfm 
 ). 
 
-Additionally, they have taken the care to make sure that while Wards are different sizes, the amount of people responding in ratio does not change. On the site they continue and state they “[aim] to grant the same degree of importance to all geographic units of a given size,” (statcan, 2021 https://www12.statcan.gc.ca/census-recensement/2021/ref/98-306/2021001/intro-eng.cfm 
-)
+They have also taken the care to make sure that while Wards are different sizes, the amount of people responding in ratio does not change. On the site they continue and state they aim “to grant the same degree of importance to all geographic units of a given size,” (statcan, 2021 https://www12.statcan.gc.ca/census-recensement/2021/ref/98-306/2021001/intro-eng.cfm 
+).
 
-However, I still think this might lead to a discrepancy for outlier communities and minorities. They still have a smaller percentage providing answers in the census, even if it has been distributed evenly.
+#### Issues
+Unfortunitely, I still think this might lead to a discrepancy for outlier communities and minorities. They still have a smaller percentage providing answers in the census, even if it has been distributed evenly.
 
 Using smaller numbers as an example, imagine there is a community who makes up 2% of a population. 2/100 turns into 0.5/25. This therefore leaves the minority to be represented by only 0.5 people. In this example, it might present inaccurate data about said minorities, perhaps making it seem like a group or even ward has a higher likelihood to have an income of x or y, when only a small cross section of the group had answered. It is something that would prevail despite the effort to make sure the survey has been divided equally across geographical land.
 
@@ -71,9 +73,17 @@ One of the sub categories of this is “Dwelling provided by the local governmen
 
 The columns overall are a little difficult to read, especially when trying to make sure there are no missing numbers. The categories are not broken up, and are laid out in one sprawling wall of boxes. I believe Michelle touches on this in her part as well.
 
-Overall, it is difficult to tell if are many cases of missing numbers until we can easily sort the categories. Here is an example of an issue I ran into.
+#### Missing and Invalid Data
+It is difficult to tell if are many cases of missing numbers until we can easily sort the categories. Here is an example of an issue I ran into.
 
-//Insert image here.//
+Here is the origninal chart. It's columns a-b, rows 1-28.
+![](original-chart.png)<br>
+
+![](annotated-chart.png)<br>
+Here is an annotated and edited chart. It's columns a-b, rows 1-44.
+
+![](total-comparison.png)<br>
+Here is an additonal chart to compare data totals and accuracy.
 
 (Screenshot of Row to Collum)
 
