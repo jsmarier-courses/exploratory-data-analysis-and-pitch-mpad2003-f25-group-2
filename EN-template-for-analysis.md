@@ -42,23 +42,16 @@ As I look at the raw data, one question that comes to mind is why some language 
 
 
 ## 3. Understanding Data
-
-
-
-### 3.1. VIMO Analysis
-
-Use three hashtag symbols (`###`) to create a level 3 heading like this one. Please fo0llow this template when it comes to level 1 and level 2 headings. However, you can use level 3 headings as you see fit.
- 
+### 3.1. VIMO Analysis 
 ###### Reliability
 This data is from Government Canada’s 2021 Long Form Census. Government Canada is a trusted source, however it is important to note that the data might not fully reflect true numbers. 
 
 The Long Form Census was sent out to 25% of the population across Ottawa, meaning 75% of citizens did not fill it out. It does not mean the data collected is “wrong”, however the actual numbers may differ since it was a sample pool. 
 
-Overall, this is not a huge issue. Statistics Canada states “The long-form sample is evenly distributed geographically to ensure a high degree of reliability of the estimates for all areas of the country,” (statcan, 2021 https://www12.statcan.gc.ca/census-recensement/2021/ref/98-306/2021001/intro-eng.cfm 
-). 
+Overall, this is not a huge issue. Statistics Canada states “The long-form sample is evenly distributed geographically to ensure a high degree of reliability of the estimates for all areas of the country,” (2023).
 
-They have also taken the care to make sure that while Wards are different sizes, the amount of people responding in ratio does not change. On the site they continue and state they aim “to grant the same degree of importance to all geographic units of a given size,” (statcan, 2021 https://www12.statcan.gc.ca/census-recensement/2021/ref/98-306/2021001/intro-eng.cfm 
-).
+They have also taken the care to make sure that while Wards are different sizes, the amount of people responding in ratio does not change. On the site they continue and state they aim “to grant the same degree of importance to all geographic units of a given size,” (2023).
+
 
 ###### Issues
 Unfortunitely, I still think this might lead to a discrepancy for outlier communities and minorities. They still have a smaller percentage providing answers in the census, even if it has been distributed evenly.
@@ -77,12 +70,13 @@ The columns overall are a little difficult to read, especially when trying to ma
 It is difficult to tell if are many cases of missing numbers until we can easily sort the categories. Here is an example of an issue I ran into.
 
 ![](original-chart.png)<br>
-*Figure 2, original dataset.*
+(*Figure 2: section of original dataset seen in Figure 1.*)
 
 The above image is taken from the origninal cvs file after being converted to google docs; specifically columns A-B, rows 1-28. It all looks like it could be a part of the same "total" when checking for missing variables, however it is most certainly not, especially if one tries to add up all the values in column B.
 
 ![](annotated-chart.png)<br>
-(*Figure 3, an annotated copy of the dataset*)
+(*Figure 3: an annotated copy of the dataset*)
+https://docs.google.com/spreadsheets/d/1lHASh3lvd288mOsTj2e4Pb3ZJo5Nit0Mnzyi_P1U1-4/edit?usp=sharing
 
 Here is an annotated and edited version of the dataset. It is comprised of columns a-b, and rows 1-44. The highlighted yellow boxes are new categories, and are the "totals" that can be used for identifying missing or invalid data. 
 
@@ -90,15 +84,12 @@ I added a SUM section which tallied up the individual rows of numbers and then c
 
 ![](total-comparison.png)<br>
 (*Figure 4, totals up and compares information from Figure 3*)
+https://docs.google.com/spreadsheets/d/1lHASh3lvd288mOsTj2e4Pb3ZJo5Nit0Mnzyi_P1U1-4/edit?usp=sharing 
 
 Here is an additonal section I added to the annotated spreadsheet from Figure 3, to compare data totals and accuracy. It seems to be off, even when removing the 3.1% from the Non-Response percentage.
 
 Overall, I cannot fully and thoroughly assess the dataset without cleaning the entire spreadsheet.
 
-
-**For example:**
-
-As Cairo (2016) argues, a data visualization should be truthful...
 
 ### 3.2. Cleaning Data
 
@@ -133,10 +124,6 @@ In conclusion, the team will be moving forward to research ward data. We will an
 
 ## 6. References
 
-Include a list of your references here. Please follow [APA guidelines for references](https://apastyle.apa.org/style-grammar-guidelines/references). Hanging paragraphs aren't required though.
+Government of Canada. (2023, September 22). *Sampling and weighting technical report, census of Population, 2021 1. census data collection. 1. Census data collection.* Statistics Canada
+https://www12.statcan.gc.ca/census-recensement/2021/ref/98-306/2021001/chap1-eng.cfm 
 
-**Here's an example:**
-
-Bounegru, L., & Gray, J. (Eds.). (2021). *The Data Journalism Handbook 2: Towards A Critical Data Practice*. Amsterdam University Press. [https://ocul-crl.primo.exlibrisgroup.com/permalink/01OCUL_CRL/hgdufh/alma991022890087305153](https://ocul-crl.primo.exlibrisgroup.com/permalink/01OCUL_CRL/hgdufh/alma991022890087305153)
-
-//note from corinna, I will add in my references formatted properly here.
