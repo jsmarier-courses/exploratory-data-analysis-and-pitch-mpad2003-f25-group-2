@@ -49,7 +49,7 @@ As I look at the raw data, one question that comes to mind is why some language 
 
 Use three hashtag symbols (`###`) to create a level 3 heading like this one. Please fo0llow this template when it comes to level 1 and level 2 headings. However, you can use level 3 headings as you see fit.
  
-#### Reliability
+###### Reliability
 This data is from Government Canada’s 2021 Long Form Census. Government Canada is a trusted source, however it is important to note that the data might not fully reflect true numbers. 
 
 The Long Form Census was sent out to 25% of the population across Ottawa, meaning 75% of citizens did not fill it out. It does not mean the data collected is “wrong”, however the actual numbers may differ since it was a sample pool. 
@@ -60,7 +60,7 @@ Overall, this is not a huge issue. Statistics Canada states “The long-form sam
 They have also taken the care to make sure that while Wards are different sizes, the amount of people responding in ratio does not change. On the site they continue and state they aim “to grant the same degree of importance to all geographic units of a given size,” (statcan, 2021 https://www12.statcan.gc.ca/census-recensement/2021/ref/98-306/2021001/intro-eng.cfm 
 ).
 
-#### Issues
+###### Issues
 Unfortunitely, I still think this might lead to a discrepancy for outlier communities and minorities. They still have a smaller percentage providing answers in the census, even if it has been distributed evenly.
 
 Using smaller numbers as an example, imagine there is a community who makes up 2% of a population. 2/100 turns into 0.5/25. This therefore leaves the minority to be represented by only 0.5 people. In this example, it might present inaccurate data about said minorities, perhaps making it seem like a group or even ward has a higher likelihood to have an income of x or y, when only a small cross section of the group had answered. It is something that would prevail despite the effort to make sure the survey has been divided equally across geographical land.
@@ -73,28 +73,28 @@ One of the sub categories of this is “Dwelling provided by the local governmen
 
 The columns overall are a little difficult to read, especially when trying to make sure there are no missing numbers. The categories are not broken up, and are laid out in one sprawling wall of boxes. I believe Michelle touches on this in her part as well.
 
-#### Missing and Invalid Data
+###### Missing and Invalid Data
 It is difficult to tell if are many cases of missing numbers until we can easily sort the categories. Here is an example of an issue I ran into.
 
-Here is the origninal chart. It's columns a-b, rows 1-28.
 ![](original-chart.png)<br>
+*Figure 2, original dataset.*
+
+The above image is taken from the origninal cvs file after being converted to google docs; specifically columns A-B, rows 1-28. It all looks like it could be a part of the same "total" when checking for missing variables, however it is most certainly not, especially if one tries to add up all the values in column B.
 
 ![](annotated-chart.png)<br>
-Here is an annotated and edited chart. It's columns a-b, rows 1-44.
+(*Figure 3, an annotated copy of the dataset*)
+
+Here is an annotated and edited version of the dataset. It is comprised of columns a-b, and rows 1-44. The highlighted yellow boxes are new categories, and are the "totals" that can be used for identifying missing or invalid data. 
+
+I added a SUM section which tallied up the individual rows of numbers and then compared them to the overall total listed in the original dataset - this is listed as "difference" in my annotated chart.
 
 ![](total-comparison.png)<br>
-Here is an additonal chart to compare data totals and accuracy.
+(*Figure 4, totals up and compares information from Figure 3*)
 
-(Screenshot of Row to Collum)
+Here is an additonal section I added to the annotated spreadsheet from Figure 3, to compare data totals and accuracy. It seems to be off, even when removing the 3.1% from the Non-Response percentage.
 
-The sub categories of “15 to 64 years”, “65 years and over”, “65 to 69 years”, “85 years and over” are not differentiated at all. 
+Overall, I cannot fully and thoroughly assess the dataset without cleaning the entire spreadsheet.
 
-When trying to see if there was any missing or invalid, I got very confused. I added boxes B4;B28 together, but it gave me a much too high number. This is 
-
-Overall, to much more thoroughly look into this I would have to clean the spreadsheet completely. 
-
-
-Support your claims by citing relevant sources. Please follow [APA guidelines for in-text citations](https://apastyle.apa.org/style-grammar-guidelines/citations).
 
 **For example:**
 
@@ -130,6 +130,7 @@ The story could start with a city-wide map highlighting income differences acros
 ## 5. Conclusion
 
 In conclusion, the team will be moving forward to research ward data. We will analyse if there are any discrepancies in funding and quality of life overall from ward to ward - along with what might be contributing to the data reflecting as such. The dataset itself will also be re-assesed when it's been re-categorized/organized. Lastly, the group will continue to search for other information and statistics/data to help support our story.
+
 ## 6. References
 
 Include a list of your references here. Please follow [APA guidelines for references](https://apastyle.apa.org/style-grammar-guidelines/references). Hanging paragraphs aren't required though.
