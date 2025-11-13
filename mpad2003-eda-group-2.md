@@ -5,23 +5,6 @@
 
 # Exploratory Data Analysis (EDA) & Pitch
 
-Use one hashtag symbol (`#`) to create a level 1 heading like this one.
-
-## Foreword
-
-For this assignment, you must extract data from a dataset provided by the instructor. You must then clean and analyze the data, create exploratory charts/visualizations, and find a potential story idea. Your assignment must clearly detail your process. You are expected to write about 1500-2000 words, and to include several screen captures showing the different steps you went through. Your assignment must be written with the Markdown format and submitted on GitHub Classroom.
-
-I have been assigning different versions of this project to my digital journalism and data storytelling students for a few years now. Its structure was inspired by the main sections/chapters of [*The Data Journalism Handbook*](https://datajournalism.com/read/handbook/one/). This version was further inspired by the [Key Capabilities in Data Science](https://extendedlearning.ubc.ca/programs/key-capabilities-data-science) program offered by the University of British Columbia (UBC).
-
-**Here are some useful resources for this assignment:**
-
-* [GitHub's *Basic writing and formatting syntax* page](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
-* [The template repository for this assignment in case you delete something by mistake](https://github.com/jsmarier/jou4100_jou4500_mpad2003_project2_template)
-
-Did you notice how to create a hyperlink? In Markdown, we put the clickable text between square brackets and the actual URL between parentheses.
-
-And to create an unordered list, we simply put a star (`*`) before each item.
-
 ## 1. Introduction
 Group 2 - a group comprised of Li Yu, Michelle Clarke and myself (Corinna MacIntyre) - have been tasked to come up with a Story using Ottawa's Ward Data. The data we are using has been sourced from Government Canada’s 2021 Long Form Census, and is to be analyzed and compiled into a visual story by the end of the semester. In this pitch, we explore the mechanics of how we obtained the dataset, along with the VIMO process and cleaning it up. Finally, we will discuss further steps and where we will take the project. 
 
@@ -93,21 +76,61 @@ Overall, I cannot fully and thoroughly assess the dataset without cleaning the e
 
 ### 3.2. Cleaning Data
 
-Insert text here.
+Freezing first roll and cloumn
+
+Removing irrelevant rows
+
+Using formate to highlight important rows, or to distinguish different entries
+
+Using split function with space as delimiter to remove the white space infront of the entries.
+```
+=split(A8," ")
+```
+
+Using concatenate to join the values
+
+Using text function to add dollar symbol infrom of currency values during concatenation. 
+```
+=CONCATENATE(text(C8,"$#,###")," ",D8," ",text(E8,"$#,###"))
+```
+
+Using sum to merge desired entries
+```
+=sum(F31:AD31)
+```
+Using paste values only to override original data
+
+Using pivite table to sort entry by value. (lowest to highest)
+
+![](QQ20251113-000018.png)<br>
 
 ### 3.3. Exploratory Data Analysis (EDA)
 
-Insert text here.
+In order to explore this data, we need to identify the applicable sets of data string that would support our findings. In this 2000 row data set, there are three main data points that we are interested in. The distribution of the immigrants, the ethnicity that composes the largest amount of immigration population, the standard of living of each ward, and the income discrepancy or the lack of between the two. 
+
+The original dataset provided various amount of insight of the population housing each ward, yet most data it provided is either redudent for our purpose, or not applicable for our cause. The timeline of the immigration population within this dataset is counted by 10 year margin, with the exception of the recent entries, and since it only gives us a general counting of the immigration population, we can only determine that the number of immigrants have been on a steady rise over the past few decades. 
+
+However, the inclusition of the place of birth for the immigrant population is exactly what we searched for, so it was extracted to a seperate datasheet to further analysis. 
+
+For income discrepancy, the dateset provided the distribution of the general income bracket for each ward which was very helpful and need much less tinkering. 
+
+Lastly, we will have to look into multiple criterias in order to determine the living condition of each ward. The daataset provided serveral hundread rows of data entries that gives us a very detailed depiction of the family composition of the population, which includes the size, mothertone, number of maintainers, ages, etc. This information is helpful, but on it's own, insufficint. After a deepened dive into the dataset, and it's meaning, it is revealed to us this information is baked into another data entry, "housing indicators". Housing indicator, specifically the one listed as "not suitable", where it lists the houses that contains inadequate amount of bedrooms for the composition of the household. We will also be including the data entry for dewlling condition to further unstant the data.
+
+From the data we have gathered so far, we have gathered that ward 6 stitsvill have the hightest percentage of people using a heafty amount of their income on properties that needs major repair, while having the second highest density of India immigration population, yet seems to be having larger percentage of population in the second highest income bracket. This could lead to a number of specluations, either the housing there is more affordable due to the state it is in, which draws parts of immagration population toward that area; the racial divide in that area in preventing part of the immigration population from seeking more ideal work positions, so they have to settle for less ideal housing, or this data could be used to compel the ward to improve the living condition.
 
 **This section should include a screen capture of your pivot table, like so:**
 
-![](pivot-table-screen-capture.png)<br>
-*Figure 2: This pivot table shows...*
+![](piviot_table_1.png)<br>
+*this piviot table shows the income bracket distribution for city of ottawa sorted from hightest to lowest*
 
 **This section should also include a screen capture of your exploratory chart, like so:**
 
-![](chart-screen-capture.png)<br>
-*Figure 3: This exploratory chart shows...*
+![](City_of_Ottawa-Ward_1_through_6.png)<br>
+*this chart shows the income bracket distribution of first 6 wards in ottawa*
+![](chart.png)<br>
+*this chart shows the housing condition for all of the wards. from this chart we can tell ward 6 appears to have more population spending more then 30% of their revenue on houses that needs major repair*
+![](populationchart.png)<br>
+*this chart shows the three biggest immigration population, and the ward they reside in*
 
 ## 4. Potential Story
 
@@ -127,3 +150,6 @@ In conclusion, the team will be moving forward to research ward data. We will an
 Government of Canada. (2023, September 22). *Sampling and weighting technical report, census of Population, 2021 1. census data collection. 1. Census data collection.* Statistics Canada
 https://www12.statcan.gc.ca/census-recensement/2021/ref/98-306/2021001/chap1-eng.cfm 
 
+National Occupancy Standard. (2024). Cmhc-Schl.gc.ca. https://www.cmhc-schl.gc.ca/professionals/industry-innovation-and-leadership/industry-expertise/affordable-housing/provincial-territorial-agreements/investment-in-affordable-housing/national-occupancy-standard
+
+‌
